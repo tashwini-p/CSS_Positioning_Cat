@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        .parentdiv{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        #d1{
+            height: 400px;
+            width: 300px;
+        }
+
+        #d2{
+            position: absolute;
+            height: 400px;
+            width: 300px;
+            background-color: #636940; 
+        }
+
+        #d1>div{
+            height: 200px;
+            width: 300px;
+            
+        }
+
+        #cd-1{
+            background-color: #59a96a;
+        }
+
+        #cd-2{
+            background-image: linear-gradient(to left,rgb(123, 206, 123),rgb(96, 96, 211),rgb(176, 137, 205));
+        }
+
+        #cir{
+            height: 120px;
+            width: 120px;
+            border: 1px;
+            background-color: #c1ff72;
+            border-radius: 50%;
+            position: relative;
+            right:60px; top: 40px;
+        }
+
+        #cat{
+            height: 160px;
+            width: 160px;
+            border: 1px solid;
+            position: relative;
+            top:80px; left:80px; 
+            background-image: url(https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg);
+            background-size:cover;
+        }
+
+    </style>
+</head>
+<body>
+        <div id="d1" class="parentdiv">
+            <div id="cd-1">
+                <!-- <div id="cir"></div> -->
+            </div>
+            <div id="cd-2">
+            </div>
+        </div>
+        <div id="d2" class="parentdiv">
+            <div id="cir"></div>
+            <div id="cat"></div>
+        </div>
+</body>
+</html>
+
